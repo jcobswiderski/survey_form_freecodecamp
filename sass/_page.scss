@@ -3,7 +3,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    font-size: $defaultFontSize;
+    font-size: $font-size-default;
 
     &::after {
         content: "";
@@ -15,5 +15,12 @@
         bottom: 0;
         right: 0;
         z-index: -1;   
+    }
+
+    &__survey {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
     }
 }       
