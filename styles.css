@@ -1,4 +1,12 @@
-body {
-  background: green;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.page {
+  background-image: url("background.jpeg");
+  font-size: 16px;
 }
 /*# sourceMappingURL=styles.css.map */
