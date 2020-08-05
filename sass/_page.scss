@@ -1,4 +1,19 @@
 .page {
-    background-image: url('background.jpeg');
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
     font-size: $defaultFontSize;
-}
+
+    &::after {
+        content: "";
+        background: url('background.jpeg');
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;   
+    }
+}       
