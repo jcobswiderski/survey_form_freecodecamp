@@ -1,21 +1,26 @@
 .survey {
-    font-family: $font-family-default;
-    border: 1px solid red;
-    color: $color-text-light;
     text-align: center;
+    font-family: $font-family-default;
+    color: $color-text-light;
+    border: 1px solid red;
+
+    &__header {
+        text-shadow: 1px 1px 2px black;
+        border: 1px solid #ffffff;
+    }
 
     &__title {
-        font-size: $font-size-title;
+        display: block;  
         font-weight: $font-weight-default;
-        padding: 30px 10px 5px ;
-        text-shadow: 1px 1px 2px black;
+        font-size: $font-size-title;
+        padding: 30px 10px 5px 10px;
     }
 
     &__description {
-        font-size: $font-size-default;
-        font-weight: $font-weight-light;
+        display: block;
         font-style: italic;
+        font-weight: $font-weight-light;
+        font-size: $font-size-default;
         padding: 0 20px 30px 20px;
-        text-shadow: 1px 1px 2px black;
     }
 }
