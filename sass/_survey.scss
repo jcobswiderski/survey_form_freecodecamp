@@ -1,12 +1,21 @@
 .survey {
     font-family: $font-family-default;
     border: 1px solid red;
+    color: $color-text-light;
+    text-align: center;
 
     &__title {
         font-size: $font-size-title;
+        font-weight: $font-weight-default;
+        padding: 30px 10px 5px ;
+        text-shadow: 1px 1px 2px black;
     }
 
     &__description {
         font-size: $font-size-default;
+        font-weight: $font-weight-light;
+        font-style: italic;
+        padding: 0 20px 30px 20px;
+        text-shadow: 1px 1px 2px black;
     }
 }
