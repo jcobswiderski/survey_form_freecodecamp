@@ -14,20 +14,20 @@
         </header>
         <form class="survey__form">
             <div class="survey__item">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label class="survey__label" for="name">Name</label>
+                <input class="survey__input" type="text" id="name" name="name" placeholder="Enter your name" required>
             </div>
             <div class="survey__item">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+                <label class="survey__label" for="email">Email</label>
+                <input class="survey__input" type="email" id="email" name="email" placeholder="Enter your Email" required>
             </div>
             <div class="survey__item">
-                <label for="age">Age <span class="survey__subtext">(optional)</span></label>
-                <input type="age" id="age" name="age" placeholder="Age">
+                <label class="survey__label" for="age">Age <span class="survey__subtext">(optional)</span></label>
+                <input class="survey__input" type="age" id="age" name="age" placeholder="Age">
             </div>
             <div class="survey__item">
-                <label for="role">Which option best describes your current role?</label>
-                <select id="role" name="role">
+                <label class="survey__label" for="role">Which option best describes your current role?</label>
+                <select class="survey__input" id="role" name="role">
                     <option value="">Select current role</option>
                     <option value="student">Student</option>
                     <option value="full-time-job">Full Time Job</option>
@@ -37,20 +37,26 @@
                 </select>
             </div>  
             <div class="survey__item">
-                <p class="survey__item-question">Would you recommend freeCodeCamp to a friend?</p>
+                <p class="survey__label">Would you recommend freeCodeCamp to a friend?</p>
                 
-                <input type="radio" id="recommend-definitely" name="recommend" value="definitely" checked>
-                <label for="recommend-definitely">Definitely</label>
-               
-                <input type="radio" id="recommend-maybe" name="recommend" value="maybe">
-                <label for="recommend-maybe">Maybe</label>
+                <div class="survey__radio-group">
+                    <input class="survey__radio-input" type="radio" id="recommend-definitely" name="recommend" value="definitely" checked>
+                    <label class="survey__radio-label" for="recommend-definitely">Definitely</label>
+                </div>  
 
-                <input type="radio" id="recommend-not-sure" name="recommend" value="not-sure">
-                <label for="recommend-not-sure">Not sure</label>
+                <div class="survey__radio-group">
+                    <input class="survey__radio-input" type="radio" id="recommend-maybe" name="recommend" value="maybe">
+                    <label class="survey__radio-label" for="recommend-maybe">Maybe</label>
+                </div>  
+
+                <div class="survey__radio-group">
+                    <input class="survey__radio-input" type="radio" id="recommend-not-sure" name="recommend" value="not-sure">
+                    <label class="survey__radio-label" for="recommend-not-sure">Not sure</label>
+                </div>  
             </div>
             <div class="survey__item">
-                <label for="favourite-feature">What is your favorite feature of freeCodeCamp?</label>
-                <select id="favourite-feature" name="favourite-feature">
+                <label class="survey__label" for="favourite-feature">What is your favorite feature of freeCodeCamp?</label>
+                <select class="survey__input" id="favourite-feature" name="favourite-feature">
                     <option value="">Select an option</option>
                     <option value="challenges">Challenges</option>
                     <option value="projects">Projects</option>
@@ -59,46 +65,68 @@
                 </select>
             </div>  
             <div class="survey__item">
-                <p class="survey__item-question">
+                <p class="survey__label">
                     What would you like to see improved? <span class="survey__subtext">(optional)</span>
                 </p>
                 
-                <input type="checkbox" id="improvement-1" name="improvement-1" value="front-end-projects">
-                <label for="improvement-1"> Front-end Projects</label><br>
+                <div class="survey__checkbox-group">
+                    <input class="survey__checkbox-input" type="checkbox" id="improvement-1" name="improvement-1" value="front-end-projects">
+                    <label class="survey__checkbox-label" for="improvement-1"> Front-end Projects</label><br>
+                </div>
 
-                <input type="checkbox" id="improvement-2" name="improvement-2" value="back-end-projects">
-                <label for="improvement-2"> Back-end Projects</label><br>
+                <div class="survey__checkbox-group">
+                    <input class="survey__checkbox-input" type="checkbox" id="improvement-2" name="improvement-2" value="back-end-projects">
+                    <label class="survey__checkbox-label" for="improvement-2"> Back-end Projects</label><br>
+                </div>
 
-                <input type="checkbox" id="improvement-3" name="improvement-3" value="data-visualization">
-                <label for="improvement-3"> Data Visualization</label><br>
+                <div class="survey__checkbox-group">
+                    <input class="survey__checkbox-input" type="checkbox" id="improvement-3" name="improvement-3" value="data-visualization">
+                    <label class="survey__checkbox-label" for="improvement-3"> Data Visualization</label><br>
+                </div>
+                
+                <div class="survey__checkbox-group">
+                    <input class="survey__checkbox-input" type="checkbox" id="improvement-4" name="improvement-4" value="challenges">
+                    <label class="survey__checkbox-label" for="improvement-4"> Challenges</label><br>
+                </div>
 
-                <input type="checkbox" id="improvement-4" name="improvement-4" value="challenges">
-                <label for="improvement-4"> Challenges</label><br>
+                <div class="survey__checkbox-group">
+                    <input class="survey__checkbox-input" type="checkbox" id="improvement-5" name="improvement-5" value="open-source-community">
+                    <label class="survey__checkbox-label" for="improvement-5"> Open Source Community</label><br>
+                </div>
+                
+                <div class="survey__checkbox-group">
+                    <input class="survey__checkbox-input" type="checkbox" id="improvement-6" name="improvement-6" value="gitter-help-rooms">
+                    <label class="survey__checkbox-label" for="improvement-6"> Gitter help rooms</label><br>
+                </div>
 
-                <input type="checkbox" id="improvement-5" name="improvement-5" value="open-source-community">
-                <label for="improvement-5"> Open Source Community</label><br>
+                <div class="survey__checkbox-group">
+                    <input class="survey__checkbox-input" type="checkbox" id="improvement-7" name="improvement-7" value="videos">
+                    <label class="survey__checkbox-label" for="improvement-7"> Videos</label><br>
+                </div>
 
-                <input type="checkbox" id="improvement-6" name="improvement-6" value="gitter-help-rooms">
-                <label for="improvement-6"> Gitter help rooms</label><br>
+                <div class="survey__checkbox-group">
+                    <input class="survey__checkbox-input" type="checkbox" id="improvement-8" name="improvement-8" value="city-meetups">
+                    <label class="survey__checkbox-label" for="improvement-8"> City Meetups</label><br>
+                </div>
 
-                <input type="checkbox" id="improvement-7" name="improvement-7" value="videos">
-                <label for="improvement-7"> Videos</label><br>
+                <div class="survey__checkbox-group">
+                    <input class="survey__checkbox-input" class="survey__input" type="checkbox" id="improvement-9" name="improvement-9" value="wiki">
+                    <label class="survey__checkbox-label" for="improvement-9"> Wiki</label><br>
+                </div>
 
-                <input type="checkbox" id="improvement-8" name="improvement-8" value="city-meetups">
-                <label for="improvement-8"> City Meetups</label><br>
+                <div class="survey__checkbox-group">
+                    <input class="survey__checkbox-input" type="checkbox" id="improvement-10" name="improvement-10" value="forum">
+                    <label class="survey__checkbox-label" for="improvement-10"> Forum</label><br>
+                </div>
 
-                <input type="checkbox" id="improvement-9" name="improvement-9" value="wiki">
-                <label for="improvement-9"> Wiki</label><br>
-
-                <input type="checkbox" id="improvement-10" name="improvement-10" value="forum">
-                <label for="improvement-10"> Forum</label><br>
-
-                <input type="checkbox" id="improvement-11" name="improvement-11" value="additional-courses">
-                <label for="improvement-11"> Additional Courses</label><br>
+                <div class="survey__checkbox-group">
+                    <input class="survey__checkbox-input" type="checkbox" id="improvement-11" name="improvement-11" value="additional-courses">
+                    <label class="survey__checkbox-label" for="improvement-11"> Additional Courses</label><br>
+                </div>
             </div>
             <div class="survey__item">
-                <label for="comments">Any comments or suggestions?</label>
-                <textarea id="comments" name="comments" rows="5" cols="33">Enter your comment here...</textarea>
+                <label class="survey__label" for="comments">Any comments or suggestions?</label>
+                <textarea class="survey__textarea" id="comments" name="comments" rows="5" cols="33">Enter your comment here...</textarea>
             </div>
             <button type="submit" class="survey__submit">Submit</button>
         </form>

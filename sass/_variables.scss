@@ -1,5 +1,7 @@
 // Font sizes
 
+$font-size-subtext: 14.4px;
+$font-size-input: 16px;
 $font-size-default: 18px;
 $font-size-title: 32px;
 
@@ -16,3 +18,17 @@ $font-weight-extra-light: 200;
 // Colors
 
 $color-text-light: #F3F3F3;
+$color-green: rgb(55, 175, 101);
+
+// Viewport breakpoints
+
+$small-devices-min: 576px;
+$small-devices-max: 767.98px;
+
+$medium-devices-min: 768px;
+$medium-devices-max: 991.98px;
+
+$large-devices-min: 992px;
+$large-devices-max: 1199.98px;
+
+$extra-large-devices-min: 1200px;
