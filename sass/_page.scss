@@ -1,8 +1,6 @@
 .page {
     display: block;
     position: relative;
-    width: 100vw;
-    height: 100vh;
     font-size: $font-size-default;
 
     &::after {

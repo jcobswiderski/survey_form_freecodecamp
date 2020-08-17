@@ -26,9 +26,17 @@
         display: flex;
         flex-direction: column;
         background: #1B1B32CC;
-        padding: 40px;
+        padding: 45px;
         margin: 20px 0 40px 0;
         width: 720px;
+        
+        @media screen and (max-width: $small-devices-min) {
+            width: 100%;
+        }
+
+        @media screen and (min-width: $small-devices-min) and (max-width: $small-devices-max) {
+            width: 90%;
+        }
     }
 
     &__item {
@@ -46,6 +54,10 @@
         width: 100%;
     }
 
+    &__radio-group--distance {
+        padding-top: 10px;
+    }
+
     &__radio-input {
         margin: 5px 10px;
     }
@@ -58,6 +70,7 @@
         display: block;
         font-weight: $font-weight-default;
         padding-top: 15px;
+        text-align: left;
     }
 
     &__subtext {
@@ -88,6 +101,10 @@
         align-items: center;
         justify-content: flex-start;
         width: 100%;
+    }
+
+    &__checkbox-group--distance {
+        padding-top: 10px;
     }
 
     &__textarea {

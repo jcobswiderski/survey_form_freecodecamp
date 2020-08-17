@@ -9,8 +9,8 @@
 <body class="page">
     <section class="survey page__survey">
         <header class="survey__header">
-            <h1 class="survey__title">freeCodeCamp Survey Form</h1>
-            <span class="survey__description">Thank you for taking the time to help us improve the platform</span>
+            <h1 class="survey__title" id="title">freeCodeCamp Survey Form</h1>
+            <p class="survey__description" id="description">Thank you for taking the time to help us improve the platform</p>
         </header>
         <form class="survey__form">
             <div class="survey__item">
@@ -23,7 +23,7 @@
             </div>
             <div class="survey__item">
                 <label class="survey__label" for="age">Age <span class="survey__subtext">(optional)</span></label>
-                <input class="survey__input" type="age" id="age" name="age" placeholder="Age">
+                <input class="survey__input" type="number" id="age" name="age" placeholder="Age" min="16" max="99">
             </div>
             <div class="survey__item">
                 <label class="survey__label" for="role">Which option best describes your current role?</label>
@@ -39,7 +39,7 @@
             <div class="survey__item">
                 <p class="survey__label">Would you recommend freeCodeCamp to a friend?</p>
                 
-                <div class="survey__radio-group">
+                <div class="survey__radio-group survey__radio-group--distance">
                     <input class="survey__radio-input" type="radio" id="recommend-definitely" name="recommend" value="definitely" checked>
                     <label class="survey__radio-label" for="recommend-definitely">Definitely</label>
                 </div>  
@@ -66,10 +66,10 @@
             </div>  
             <div class="survey__item">
                 <p class="survey__label">
-                    What would you like to see improved? <span class="survey__subtext">(optional)</span>
+                    What would you like to see improved? <span class="survey__subtext">(Check all that apply)</span>
                 </p>
                 
-                <div class="survey__checkbox-group">
+                <div class="survey__checkbox-group survey__checkbox-group--distance">
                     <input class="survey__checkbox-input" type="checkbox" id="improvement-1" name="improvement-1" value="front-end-projects">
                     <label class="survey__checkbox-label" for="improvement-1"> Front-end Projects</label><br>
                 </div>
@@ -126,7 +126,7 @@
             </div>
             <div class="survey__item">
                 <label class="survey__label" for="comments">Any comments or suggestions?</label>
-                <textarea class="survey__textarea" id="comments" name="comments" rows="5" cols="33">Enter your comment here...</textarea>
+                <textarea class="survey__textarea" name="comments" rows="5" cols="33" placeholder="Enter your comment here..."></textarea>
             </div>
             <button type="submit" class="survey__submit">Submit</button>
         </form>
